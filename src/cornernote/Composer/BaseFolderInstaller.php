@@ -12,7 +12,7 @@ class BaseFolderInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        return $package->getPrettyName();
+        return basename($package->getPrettyName());
     }
 
     /**
