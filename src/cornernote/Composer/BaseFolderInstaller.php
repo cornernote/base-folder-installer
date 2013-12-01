@@ -1,18 +1,18 @@
 <?php
 
-namespace ddelrio1986\Composer;
+namespace cornernote\Composer;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-class ZF1PublicAssetInstaller extends LibraryInstaller
+class BaseFolderInstaller extends LibraryInstaller
 {
     /**
      * {@inheritDoc}
      */
     public function getInstallPath(PackageInterface $package)
     {
-        return "public" . DIRECTORY_SEPARATOR . $package->getPrettyName();
+        return $package->getPrettyName();
     }
 
     /**
@@ -20,6 +20,6 @@ class ZF1PublicAssetInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return (bool)("zf1-public-asset" === $packageType);
+        return (bool)("base-folder" === $packageType);
     }
 }
