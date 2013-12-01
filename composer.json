@@ -1,5 +1,5 @@
 {
-    "name": "cornernote/base-folder-installer",
+    "name": "mrphp/base-folder-installer",
     "description": "Composer installer to place libraries in the base folder of your project.",
     "type": "composer-installer",
     "authors": [
