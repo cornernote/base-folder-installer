@@ -1,29 +1,20 @@
 {
-    "name": "ddelrio1986/zf1-public-asset-installer",
-    "description": "Composer installer to place libraries in the public folder of ZF1 projects",
+    "name": "cornernote/base-folder-installer",
+    "description": "Composer installer to place libraries in the base folder of your project.",
     "type": "composer-installer",
-    "keywords": [
-        "zend",
-        "zendframework",
-        "zendframework1",
-        "zf",
-        "zf1",
-        "php"
-    ],
     "authors": [
         {
-            "name": "Daniel Del Rio",
-            "email": "ddelrio1986@gmail.com",
-            "homepage": "http://danieldelrio.me",
-            "role": "Developer"
+            "name": "Brett O'Donnell",
+            "email": "cornernote@gmail.com",
+            "homepage": "http://about.me/cornernote"
         }
     ],
     "autoload": {
         "psr-0": {
-            "ddelrio1986\\Composer": "src/"
+            "cornernote\\Composer": "src/"
         }
     },
     "extra": {
-        "class": "ddelrio1986\\Composer\\ZF1PublicAssetInstaller"
+        "class": "cornernote\\Composer\\BaseFolderInstaller"
     }
 }
