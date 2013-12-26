@@ -8,7 +8,7 @@ To use this in your package add the following to your `composer.json`:
 {
 	"type": "base-folder",
 	"require": {
-		"mrphp/base-folder-installer": "dev-master"
+		"cornernote/base-folder-installer": "dev-master"
 	}
 }
 ```
